@@ -50,9 +50,23 @@ namespace OtoKiralama
 
         private void btnAracListele_Click(object sender, EventArgs e)
         {
-            Image resim = pictureEdit1.Image;
-            string resimYolu = "C:\\Users\\PC\\source\\repos\\OtoKiralama\\OtoKiralama\\Resimler\\" + Guid.NewGuid().ToString() + ".jpg";
-            resim.Save(resimYolu);
+
+
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Refresh();
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void btnAracListele_Click_1(object sender, EventArgs e)
+        {
+
             if (textBox2.Text != "" || textBox3.Text != "" || comboBox1.SelectedIndex > 0 || comboBox2.SelectedIndex > 0)
             {
                 if (textBox3.Text.Length != 7)
@@ -70,7 +84,6 @@ namespace OtoKiralama
                             markaid = comboBox1.SelectedIndex + 1,
                             modeli = textBox2.Text,
                             modelyili = comboBox2.SelectedItem.ToString(),
-                            resim=resimYolu,
                         };
                         Mycontext.carList.Add(newcar);
                         Mycontext.SaveChanges();
@@ -90,13 +103,7 @@ namespace OtoKiralama
                 MessageBox.Show("Lütfen tüm alanları doldurun.");
             }
         }
-
     }
-
-
-
-
-
 
 
 }

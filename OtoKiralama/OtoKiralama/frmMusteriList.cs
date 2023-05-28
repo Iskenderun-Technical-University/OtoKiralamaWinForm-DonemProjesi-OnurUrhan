@@ -32,6 +32,23 @@ namespace OtoKiralama
 
         private void btnAracListele_Click(object sender, EventArgs e)
         {
+            
+
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            gridView1.RefreshData();
+            gridControl1.Refresh();
+        }
+
+        private void btnAracListele_Click_1(object sender, EventArgs e)
+        {
             DbOto Mycontext = new DbOto();
 
             var list = from m in Mycontext.musteri
@@ -61,9 +78,6 @@ namespace OtoKiralama
             }
 
             gridControl1.DataSource = list.ToList();
-
         }
-
-
     }
 }

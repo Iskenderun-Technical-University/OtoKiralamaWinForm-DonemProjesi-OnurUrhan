@@ -18,6 +18,7 @@ using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraEditors.Repository;
 using System.Windows.Controls;
 using DevExpress.XtraExport.Helpers;
+using DevExpress.XtraRichEdit.Model;
 
 namespace OtoKiralama
 {
@@ -46,10 +47,35 @@ namespace OtoKiralama
                 comboBox2.Items.Add(i);
             }
 
+
+
         }
+
+
 
         private void btnAracListele_Click(object sender, EventArgs e)
         {
+
+
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Refresh();
+            gridView1.RefreshData();
+            gridControl1.Refresh();
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Hide();
+        }
+        private RepositoryItemPictureEdit repositoryItemPictureEdit;
+
+        private void btnAracListele_Click_1(object sender, EventArgs e)
+        {
+            gridView1.OptionsView.ColumnAutoWidth = true;
+
             DbOto Mycontext = new();
             var list = from cl in Mycontext.carList
                        join a in Mycontext.Marka on cl.markaid equals a.Id
@@ -60,7 +86,7 @@ namespace OtoKiralama
                            Modeli = cl.modeli,
                            ModelYili = cl.modelyili,
                            Plaka = cl.Plakano,
-                           Resim = cl.resim,
+
                        };
 
             if (comboBox1.SelectedIndex > 0)
@@ -75,12 +101,11 @@ namespace OtoKiralama
             {
                 list = list.Where(x => x.Modeli.Contains(textBox1.Text));
             }
-            GridColumn imageColumn = gridView1.Columns.AddVisible("Resim", "Resim");
-            imageColumn.ColumnEdit = new RepositoryItemImageEdit();
-            imageColumn.FieldName = "Resim";
-
 
             gridControl1.DataSource = list.ToList();
+
+
+
 
 
         }

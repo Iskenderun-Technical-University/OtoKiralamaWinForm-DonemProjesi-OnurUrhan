@@ -93,5 +93,15 @@ namespace OtoKiralama
                 MessageBox.Show("Müşteri bilgileri eksik");
             }
         }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Refresh();
+        }
     }
 }

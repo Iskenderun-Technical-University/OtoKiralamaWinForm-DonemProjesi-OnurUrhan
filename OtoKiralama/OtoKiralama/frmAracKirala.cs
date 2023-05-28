@@ -1,4 +1,5 @@
 ﻿using DevExpress.Utils.Menu;
+using DevExpress.XtraCharts.Design;
 using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using System;
@@ -23,17 +24,23 @@ namespace OtoKiralama
             InitializeComponent();
 
             dateEdit1.Properties.MinValue = DateTime.Now;
-            dateEdit2.Properties.MinValue = DateTime.Now;
+
+
 
         }
 
-
-        private void frmAracKirala_Load(object sender, EventArgs e)
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            gridView1.RefreshData();
+            gridControl1.Refresh();
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void simpleButton1_Click_1(object sender, EventArgs e)
         {
             DbOto Mycontext = new DbOto();
             if (dateEdit1.EditValue == null || dateEdit2.EditValue == null)
@@ -89,15 +96,21 @@ namespace OtoKiralama
             }
         }
 
-        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void dateEdit1_EditValueChanged(object sender, EventArgs e)
         {
+            dateEdit2.Properties.MinValue = Convert.ToDateTime(dateEdit1.EditValue);
+        }
+
+        private void btnAdd_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
             DateTime date1 = dateEdit1.DateTime.Date;
             DateTime date2 = dateEdit2.DateTime.Date;
 
             TimeSpan difference = date2 - date1;
-            int dayDifference = difference.Days+1;
+            int dayDifference = difference.Days + 1;
 
-            
+
 
 
             if (gridView1.SelectedRowsCount > 0)
@@ -105,21 +118,18 @@ namespace OtoKiralama
                 int[] selectedRowHandles = gridView1.GetSelectedRows();
                 string plakaNo = gridView1.GetRowCellValue(selectedRowHandles[0], "Plaka").ToString();
                 string marka = gridView1.GetRowCellValue(selectedRowHandles[0], "Marka").ToString();
-                decimal ucret= Convert.ToDecimal(gridView1.GetRowCellValue(selectedRowHandles[0], "Ücreti"));
+                decimal ucret = Convert.ToDecimal(gridView1.GetRowCellValue(selectedRowHandles[0], "Ücreti"));
 
                 frmYeniAracKirala frm = new frmYeniAracKirala();
                 frm.textBox2.Text = plakaNo;
                 frm.textBox3.Text = marka;
-                frm.textBox1.Text =date1.ToString();
+                frm.textBox1.Text = date1.ToString();
                 frm.textBox4.Text = date2.ToString();
                 frm.textEdit3.Text = (dayDifference * ucret).ToString();
-                frm.label1.Text = "Günlük ücreti= " + ucret + " Gün sayısı= "+dayDifference+"";
+                frm.label1.Text = "Günlük ücreti= " + ucret + " Gün sayısı= " + dayDifference + "";
                 frm.Show();
             }
-
-
         }
-
     }
 }
 

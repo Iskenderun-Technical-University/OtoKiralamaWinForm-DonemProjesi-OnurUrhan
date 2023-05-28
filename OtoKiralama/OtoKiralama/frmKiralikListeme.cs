@@ -117,5 +117,16 @@ namespace OtoKiralama
 
             gridControl1.DataSource = list.ToList();
         }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Refresh();
+            gridView1.RefreshData();
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

@@ -28,378 +28,379 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArabaEkle));
-            barManager1 = new DevExpress.XtraBars.BarManager(components);
-            bar1 = new DevExpress.XtraBars.Bar();
-            barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
-            btnAracListele = new DevExpress.XtraEditors.SimpleButton();
-            layoutControl4 = new DevExpress.XtraLayout.LayoutControl();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
-            layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
-            layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
-            layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
-            layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
-            popupMenu1 = new DevExpress.XtraBars.PopupMenu(components);
-            ((System.ComponentModel.ISupportInitialize)barManager1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControl1).BeginInit();
-            layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureEdit1.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControl4).BeginInit();
-            layoutControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)layoutControlGroup3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControl2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlGroup1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Root).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)emptySpaceItem1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)emptySpaceItem2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)popupMenu1).BeginInit();
-            SuspendLayout();
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.bar1 = new DevExpress.XtraBars.Bar();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnAracListele = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControl4 = new DevExpress.XtraLayout.LayoutControl();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
+            this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl4)).BeginInit();
+            this.layoutControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
+            this.SuspendLayout();
             // 
             // barManager1
             // 
-            barManager1.Bars.AddRange(new DevExpress.XtraBars.Bar[] { bar1 });
-            barManager1.DockControls.Add(barDockControlTop);
-            barManager1.DockControls.Add(barDockControlBottom);
-            barManager1.DockControls.Add(barDockControlLeft);
-            barManager1.DockControls.Add(barDockControlRight);
-            barManager1.Form = this;
-            barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] { barButtonItem1, barButtonItem2, barButtonItem3 });
-            barManager1.MaxItemId = 5;
+            this.barManager1.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
+            this.bar1});
+            this.barManager1.DockControls.Add(this.barDockControlTop);
+            this.barManager1.DockControls.Add(this.barDockControlBottom);
+            this.barManager1.DockControls.Add(this.barDockControlLeft);
+            this.barManager1.DockControls.Add(this.barDockControlRight);
+            this.barManager1.Form = this;
+            this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.barButtonItem1,
+            this.barButtonItem3});
+            this.barManager1.MaxItemId = 5;
             // 
             // bar1
             // 
-            bar1.BarName = "Tools";
-            bar1.DockCol = 0;
-            bar1.DockRow = 0;
-            bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(barButtonItem1), new DevExpress.XtraBars.LinkPersistInfo(barButtonItem2), new DevExpress.XtraBars.LinkPersistInfo(barButtonItem3) });
-            bar1.Text = "Tools";
+            this.bar1.BarName = "Tools";
+            this.bar1.DockCol = 0;
+            this.bar1.DockRow = 0;
+            this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem3)});
+            this.bar1.Text = "Tools";
             // 
             // barButtonItem1
             // 
-            barButtonItem1.Caption = "barButtonItem1";
-            barButtonItem1.Id = 0;
-            barButtonItem1.Name = "barButtonItem1";
-            // 
-            // barButtonItem2
-            // 
-            barButtonItem2.Caption = "barButtonItem2";
-            barButtonItem2.Id = 3;
-            barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem1.Caption = "Yenile";
+            this.barButtonItem1.Id = 0;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // barButtonItem3
             // 
-            barButtonItem3.Caption = "barButtonItem3";
-            barButtonItem3.Id = 4;
-            barButtonItem3.Name = "barButtonItem3";
+            this.barButtonItem3.Caption = "Kapat";
+            this.barButtonItem3.Id = 4;
+            this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
+            this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+            this.barButtonItem3.Name = "barButtonItem3";
+            this.barButtonItem3.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
             // 
             // barDockControlTop
             // 
-            barDockControlTop.CausesValidation = false;
-            barDockControlTop.Dock = DockStyle.Top;
-            barDockControlTop.Location = new Point(0, 0);
-            barDockControlTop.Manager = barManager1;
-            barDockControlTop.Size = new Size(681, 25);
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.barManager1;
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.barDockControlTop.Size = new System.Drawing.Size(584, 24);
             // 
             // barDockControlBottom
             // 
-            barDockControlBottom.CausesValidation = false;
-            barDockControlBottom.Dock = DockStyle.Bottom;
-            barDockControlBottom.Location = new Point(0, 464);
-            barDockControlBottom.Manager = barManager1;
-            barDockControlBottom.Size = new Size(681, 0);
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 377);
+            this.barDockControlBottom.Manager = this.barManager1;
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.barDockControlBottom.Size = new System.Drawing.Size(584, 0);
             // 
             // barDockControlLeft
             // 
-            barDockControlLeft.CausesValidation = false;
-            barDockControlLeft.Dock = DockStyle.Left;
-            barDockControlLeft.Location = new Point(0, 25);
-            barDockControlLeft.Manager = barManager1;
-            barDockControlLeft.Size = new Size(0, 439);
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
+            this.barDockControlLeft.Manager = this.barManager1;
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 353);
             // 
             // barDockControlRight
             // 
-            barDockControlRight.CausesValidation = false;
-            barDockControlRight.Dock = DockStyle.Right;
-            barDockControlRight.Location = new Point(681, 25);
-            barDockControlRight.Manager = barManager1;
-            barDockControlRight.Size = new Size(0, 439);
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(584, 24);
+            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 353);
             // 
             // layoutControl1
             // 
-            layoutControl1.Controls.Add(pictureEdit1);
-            layoutControl1.Controls.Add(comboBox2);
-            layoutControl1.Controls.Add(comboBox1);
-            layoutControl1.Controls.Add(btnAracListele);
-            layoutControl1.Controls.Add(layoutControl4);
-            layoutControl1.Controls.Add(layoutControl2);
-            layoutControl1.Dock = DockStyle.Top;
-            layoutControl1.Location = new Point(0, 25);
-            layoutControl1.Name = "layoutControl1";
-            layoutControl1.Root = Root;
-            layoutControl1.Size = new Size(681, 207);
-            layoutControl1.TabIndex = 4;
-            layoutControl1.Text = "layoutControl1";
-            // 
-            // pictureEdit1
-            // 
-            pictureEdit1.Location = new Point(144, 94);
-            pictureEdit1.MenuManager = barManager1;
-            pictureEdit1.Name = "pictureEdit1";
-            pictureEdit1.Properties.Appearance.Options.UseImage = true;
-            pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            pictureEdit1.Size = new Size(409, 20);
-            pictureEdit1.StyleController = layoutControl1;
-            pictureEdit1.TabIndex = 8;
+            this.layoutControl1.Controls.Add(this.comboBox2);
+            this.layoutControl1.Controls.Add(this.comboBox1);
+            this.layoutControl1.Controls.Add(this.btnAracListele);
+            this.layoutControl1.Controls.Add(this.layoutControl4);
+            this.layoutControl1.Controls.Add(this.layoutControl2);
+            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.layoutControl1.Location = new System.Drawing.Point(0, 24);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.Root = this.Root;
+            this.layoutControl1.Size = new System.Drawing.Size(584, 168);
+            this.layoutControl1.TabIndex = 4;
+            this.layoutControl1.Text = "layoutControl1";
             // 
             // comboBox2
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(422, 42);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(131, 24);
-            comboBox2.TabIndex = 7;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(343, 37);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(130, 21);
+            this.comboBox2.TabIndex = 7;
             // 
             // comboBox1
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(422, 12);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(131, 24);
-            comboBox1.TabIndex = 6;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(343, 12);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(130, 21);
+            this.comboBox1.TabIndex = 6;
             // 
             // btnAracListele
             // 
-            btnAracListele.Appearance.Font = new Font("Tahoma", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            btnAracListele.Appearance.Options.UseFont = true;
-            btnAracListele.ImageOptions.SvgImage = (DevExpress.Utils.Svg.SvgImage)resources.GetObject("btnAracListele.ImageOptions.SvgImage");
-            btnAracListele.Location = new Point(12, 151);
-            btnAracListele.Name = "btnAracListele";
-            btnAracListele.Size = new Size(541, 44);
-            btnAracListele.StyleController = layoutControl1;
-            btnAracListele.TabIndex = 5;
-            btnAracListele.Text = "Aracı Kaydet";
-            btnAracListele.Click += btnAracListele_Click;
+            this.btnAracListele.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnAracListele.Appearance.Options.UseFont = true;
+            this.btnAracListele.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAracListele.ImageOptions.SvgImage")));
+            this.btnAracListele.Location = new System.Drawing.Point(12, 120);
+            this.btnAracListele.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAracListele.Name = "btnAracListele";
+            this.btnAracListele.Size = new System.Drawing.Size(461, 36);
+            this.btnAracListele.StyleController = this.layoutControl1;
+            this.btnAracListele.TabIndex = 5;
+            this.btnAracListele.Text = "Aracı Kaydet";
+            this.btnAracListele.Click += new System.EventHandler(this.btnAracListele_Click_1);
             // 
             // layoutControl4
             // 
-            layoutControl4.Controls.Add(textBox3);
-            layoutControl4.Controls.Add(textBox2);
-            layoutControl4.Location = new Point(12, 12);
-            layoutControl4.Name = "layoutControl4";
-            layoutControl4.Root = layoutControlGroup3;
-            layoutControl4.Size = new Size(274, 78);
-            layoutControl4.TabIndex = 0;
-            layoutControl4.Text = "layoutControl4";
+            this.layoutControl4.Controls.Add(this.textBox3);
+            this.layoutControl4.Controls.Add(this.textBox2);
+            this.layoutControl4.Location = new System.Drawing.Point(12, 12);
+            this.layoutControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.layoutControl4.Name = "layoutControl4";
+            this.layoutControl4.Root = this.layoutControlGroup3;
+            this.layoutControl4.Size = new System.Drawing.Size(233, 68);
+            this.layoutControl4.TabIndex = 0;
+            this.layoutControl4.Text = "layoutControl4";
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(101, 41);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(161, 25);
-            textBox3.TabIndex = 5;
+            this.textBox3.Location = new System.Drawing.Point(86, 36);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(135, 20);
+            this.textBox3.TabIndex = 5;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(101, 12);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(161, 25);
-            textBox2.TabIndex = 4;
+            this.textBox2.Location = new System.Drawing.Point(86, 12);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(135, 20);
+            this.textBox2.TabIndex = 4;
             // 
             // layoutControlGroup3
             // 
-            layoutControlGroup3.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            layoutControlGroup3.GroupBordersVisible = false;
-            layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] { layoutControlItem7, layoutControlItem9 });
-            layoutControlGroup3.Name = "layoutControlGroup3";
-            layoutControlGroup3.Size = new Size(274, 78);
-            layoutControlGroup3.TextVisible = false;
+            this.layoutControlGroup3.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup3.GroupBordersVisible = false;
+            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem7,
+            this.layoutControlItem9});
+            this.layoutControlGroup3.Name = "layoutControlGroup3";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(233, 68);
+            this.layoutControlGroup3.TextVisible = false;
             // 
             // layoutControlItem7
             // 
-            layoutControlItem7.Control = textBox2;
-            layoutControlItem7.Location = new Point(0, 0);
-            layoutControlItem7.Name = "layoutControlItem7";
-            layoutControlItem7.Size = new Size(254, 29);
-            layoutControlItem7.Text = "Modelini Girin";
-            layoutControlItem7.TextSize = new Size(77, 16);
+            this.layoutControlItem7.Control = this.textBox2;
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem7.Name = "layoutControlItem7";
+            this.layoutControlItem7.Size = new System.Drawing.Size(213, 24);
+            this.layoutControlItem7.Text = "Modelini Girin";
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(62, 13);
             // 
             // layoutControlItem9
             // 
-            layoutControlItem9.Control = textBox3;
-            layoutControlItem9.Location = new Point(0, 29);
-            layoutControlItem9.Name = "layoutControlItem9";
-            layoutControlItem9.Size = new Size(254, 29);
-            layoutControlItem9.Text = "Plaka Girin";
-            layoutControlItem9.TextSize = new Size(77, 16);
+            this.layoutControlItem9.Control = this.textBox3;
+            this.layoutControlItem9.Location = new System.Drawing.Point(0, 24);
+            this.layoutControlItem9.Name = "layoutControlItem9";
+            this.layoutControlItem9.Size = new System.Drawing.Size(213, 24);
+            this.layoutControlItem9.Text = "Plaka Girin";
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(62, 13);
             // 
             // layoutControl2
             // 
-            layoutControl2.Location = new Point(557, 12);
-            layoutControl2.Name = "layoutControl2";
-            layoutControl2.Root = layoutControlGroup1;
-            layoutControl2.Size = new Size(112, 183);
-            layoutControl2.TabIndex = 3;
-            layoutControl2.Text = "layoutControl2";
+            this.layoutControl2.Location = new System.Drawing.Point(477, 12);
+            this.layoutControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.layoutControl2.Name = "layoutControl2";
+            this.layoutControl2.Root = this.layoutControlGroup1;
+            this.layoutControl2.Size = new System.Drawing.Size(95, 144);
+            this.layoutControl2.TabIndex = 3;
+            this.layoutControl2.Text = "layoutControl2";
             // 
             // layoutControlGroup1
             // 
-            layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            layoutControlGroup1.GroupBordersVisible = false;
-            layoutControlGroup1.Name = "layoutControlGroup1";
-            layoutControlGroup1.Size = new Size(112, 183);
-            layoutControlGroup1.TextVisible = false;
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Name = "layoutControlGroup1";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(95, 144);
+            this.layoutControlGroup1.TextVisible = false;
             // 
             // Root
             // 
-            Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            Root.GroupBordersVisible = false;
-            Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] { layoutControlItem3, layoutControlItem4, layoutControlItem2, emptySpaceItem1, emptySpaceItem2, layoutControlItem1, layoutControlItem5, layoutControlItem6 });
-            Root.Name = "Root";
-            Root.Size = new Size(681, 207);
-            Root.TextVisible = false;
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem3,
+            this.layoutControlItem4,
+            this.layoutControlItem2,
+            this.emptySpaceItem1,
+            this.emptySpaceItem2,
+            this.layoutControlItem1,
+            this.layoutControlItem5});
+            this.Root.Name = "Root";
+            this.Root.Size = new System.Drawing.Size(584, 168);
+            this.Root.TextVisible = false;
             // 
             // layoutControlItem3
             // 
-            layoutControlItem3.Control = layoutControl2;
-            layoutControlItem3.Location = new Point(545, 0);
-            layoutControlItem3.Name = "layoutControlItem3";
-            layoutControlItem3.Size = new Size(116, 187);
-            layoutControlItem3.TextSize = new Size(0, 0);
-            layoutControlItem3.TextVisible = false;
+            this.layoutControlItem3.Control = this.layoutControl2;
+            this.layoutControlItem3.Location = new System.Drawing.Point(465, 0);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(99, 148);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem4
             // 
-            layoutControlItem4.Control = layoutControl4;
-            layoutControlItem4.Location = new Point(0, 0);
-            layoutControlItem4.Name = "layoutControlItem4";
-            layoutControlItem4.Size = new Size(278, 82);
-            layoutControlItem4.TextSize = new Size(0, 0);
-            layoutControlItem4.TextVisible = false;
+            this.layoutControlItem4.Control = this.layoutControl4;
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(237, 72);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem4.TextVisible = false;
             // 
             // layoutControlItem2
             // 
-            layoutControlItem2.Control = btnAracListele;
-            layoutControlItem2.Location = new Point(0, 139);
-            layoutControlItem2.Name = "layoutControlItem2";
-            layoutControlItem2.Size = new Size(545, 48);
-            layoutControlItem2.TextSize = new Size(0, 0);
-            layoutControlItem2.TextVisible = false;
+            this.layoutControlItem2.Control = this.btnAracListele;
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 108);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(465, 40);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
-            emptySpaceItem1.AllowHotTrack = false;
-            emptySpaceItem1.Location = new Point(0, 106);
-            emptySpaceItem1.Name = "emptySpaceItem1";
-            emptySpaceItem1.Size = new Size(545, 19);
-            emptySpaceItem1.TextSize = new Size(0, 0);
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 72);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(465, 26);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem2
             // 
-            emptySpaceItem2.AllowHotTrack = false;
-            emptySpaceItem2.Location = new Point(0, 125);
-            emptySpaceItem2.Name = "emptySpaceItem2";
-            emptySpaceItem2.Size = new Size(545, 14);
-            emptySpaceItem2.TextSize = new Size(0, 0);
+            this.emptySpaceItem2.AllowHotTrack = false;
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 98);
+            this.emptySpaceItem2.Name = "emptySpaceItem2";
+            this.emptySpaceItem2.Size = new System.Drawing.Size(465, 10);
+            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem1
             // 
-            layoutControlItem1.Control = comboBox1;
-            layoutControlItem1.Location = new Point(278, 0);
-            layoutControlItem1.Name = "layoutControlItem1";
-            layoutControlItem1.Size = new Size(267, 30);
-            layoutControlItem1.Text = "Model Yılını Giriniz";
-            layoutControlItem1.TextSize = new Size(120, 16);
+            this.layoutControlItem1.Control = this.comboBox1;
+            this.layoutControlItem1.Location = new System.Drawing.Point(237, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(228, 25);
+            this.layoutControlItem1.Text = "Model Yılını Giriniz";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(82, 13);
             // 
             // layoutControlItem5
             // 
-            layoutControlItem5.Control = comboBox2;
-            layoutControlItem5.Location = new Point(278, 30);
-            layoutControlItem5.Name = "layoutControlItem5";
-            layoutControlItem5.Size = new Size(267, 52);
-            layoutControlItem5.Text = "Markasını Girin";
-            layoutControlItem5.TextSize = new Size(120, 16);
-            // 
-            // layoutControlItem6
-            // 
-            layoutControlItem6.Control = pictureEdit1;
-            layoutControlItem6.Location = new Point(0, 82);
-            layoutControlItem6.Name = "layoutControlItem6";
-            layoutControlItem6.Size = new Size(545, 24);
-            layoutControlItem6.Text = "Aracın Resmini Seçin";
-            layoutControlItem6.TextSize = new Size(120, 16);
+            this.layoutControlItem5.Control = this.comboBox2;
+            this.layoutControlItem5.Location = new System.Drawing.Point(237, 25);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.Size = new System.Drawing.Size(228, 47);
+            this.layoutControlItem5.Text = "Markasını Girin";
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(82, 13);
             // 
             // popupMenu1
             // 
-            popupMenu1.Manager = barManager1;
-            popupMenu1.Name = "popupMenu1";
+            this.popupMenu1.Manager = this.barManager1;
+            this.popupMenu1.Name = "popupMenu1";
             // 
             // frmArabaEkle
             // 
-            AutoScaleDimensions = new SizeF(7F, 16F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(681, 464);
-            Controls.Add(layoutControl1);
-            Controls.Add(barDockControlLeft);
-            Controls.Add(barDockControlRight);
-            Controls.Add(barDockControlBottom);
-            Controls.Add(barDockControlTop);
-            Name = "frmArabaEkle";
-            Text = "Müsteri Ekle";
-            ((System.ComponentModel.ISupportInitialize)barManager1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControl1).EndInit();
-            layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureEdit1.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControl4).EndInit();
-            layoutControl4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)layoutControlGroup3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControl2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlGroup1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Root).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)emptySpaceItem1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)emptySpaceItem2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)popupMenu1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(584, 377);
+            this.Controls.Add(this.layoutControl1);
+            this.Controls.Add(this.barDockControlLeft);
+            this.Controls.Add(this.barDockControlRight);
+            this.Controls.Add(this.barDockControlBottom);
+            this.Controls.Add(this.barDockControlTop);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "frmArabaEkle";
+            this.Text = "Araç Ekle";
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
+            this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl4)).EndInit();
+            this.layoutControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -407,7 +408,6 @@
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.Bar bar1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
@@ -434,7 +434,5 @@
         private ComboBox comboBox1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
     }
 }
