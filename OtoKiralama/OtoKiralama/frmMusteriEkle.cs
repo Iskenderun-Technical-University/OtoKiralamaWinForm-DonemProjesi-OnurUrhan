@@ -27,7 +27,7 @@ namespace OtoKiralama
         {
 
             InitializeComponent();
-
+            btnAracListele.Click += btnAracListele_Click;
         }
 
         private void btnAracListele_Click(object sender, EventArgs e)
@@ -70,9 +70,6 @@ namespace OtoKiralama
             {
                 MessageBox.Show("Lütfen tüm alanları doldurun.");
             }
-
-
-
 
         }
 

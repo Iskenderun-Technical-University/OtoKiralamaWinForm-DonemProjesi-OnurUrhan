@@ -19,6 +19,7 @@ using DevExpress.XtraEditors.Repository;
 using System.Windows.Controls;
 using DevExpress.XtraExport.Helpers;
 using DevExpress.XtraRichEdit.Model;
+using System.IO;
 
 namespace OtoKiralama
 {
@@ -86,7 +87,7 @@ namespace OtoKiralama
                            Modeli = cl.modeli,
                            ModelYili = cl.modelyili,
                            Plaka = cl.Plakano,
-
+                           Resim = cl.resim,
                        };
 
             if (comboBox1.SelectedIndex > 0)
@@ -102,7 +103,29 @@ namespace OtoKiralama
                 list = list.Where(x => x.Modeli.Contains(textBox1.Text));
             }
 
-            gridControl1.DataSource = list.ToList();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Numarası", typeof(int));
+            dt.Columns.Add("Markası", typeof(string));
+            dt.Columns.Add("Modeli", typeof(string));
+            dt.Columns.Add("ModelYili", typeof(string));
+            dt.Columns.Add("Plaka", typeof(string));
+            dt.Columns.Add("Resim", typeof(byte[]));
+
+            foreach (var item in list)
+            {
+                try
+                {
+                    byte[] imageBytes = File.ReadAllBytes(item.Resim);
+                    dt.Rows.Add(item.Numarası, item.Markası, item.Modeli, item.ModelYili, item.Plaka, imageBytes);
+                }
+                catch (Exception ex)
+                {
+                    // Dosya okuma hatasını işle
+                    Console.WriteLine("Dosya okuma hatası: " + ex.Message);
+                }
+            }
+
+            gridControl1.DataSource = dt;
 
 
 

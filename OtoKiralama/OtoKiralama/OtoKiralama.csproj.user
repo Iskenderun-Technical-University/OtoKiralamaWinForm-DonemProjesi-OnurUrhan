@@ -10,10 +10,16 @@
     <Compile Update="frmAnasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmArabaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmAracKirala.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmAracListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmPicture.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

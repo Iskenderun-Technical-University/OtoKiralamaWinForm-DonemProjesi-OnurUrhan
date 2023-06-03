@@ -59,5 +59,15 @@ namespace OtoKiralama.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fordfocus1207_750_500_70 {
+            get {
+                object obj = ResourceManager.GetObject("fordfocus1207_750_500_70", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

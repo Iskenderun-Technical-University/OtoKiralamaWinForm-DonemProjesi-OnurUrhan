@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,11 +23,16 @@ namespace OtoKiralama
 
 
             InitializeComponent();
-
+            simpleButton1.Click += simpleButton1_Click_1;
             dateEdit1.Properties.MinValue = DateTime.Now;
 
 
 
+        }
+
+        private void SimpleButton1_Click(object? sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -74,11 +80,38 @@ namespace OtoKiralama
                                               Marka = m.MarkaAdi,
                                               Model = k.modeli,
                                               ModelYılı = k.modelyili,
-                                              Ücreti = k.ucreti
+                                              Ücreti = k.ucreti,
+                                              Resim = k.resim,
                                           };
                     if (filtreliAraclar.Count() > 0)
                     {
-                        gridControl1.DataSource = filtreliAraclar.ToList();
+
+
+                        DataTable dt = new DataTable();
+                        dt.Columns.Add("Numarası", typeof(int));
+                        dt.Columns.Add("Markası", typeof(string));
+                        dt.Columns.Add("Modeli", typeof(string));
+                        dt.Columns.Add("ModelYili", typeof(string));
+                        dt.Columns.Add("Plaka", typeof(string));
+                        dt.Columns.Add("Resim", typeof(byte[]));
+
+                        foreach (var item in filtreliAraclar)
+                        {
+                            try
+                            {
+                                byte[] imageBytes = File.ReadAllBytes(item.Resim);
+                                dt.Rows.Add(item.Numara, item.Marka, item.Model, item.ModelYılı, item.Plaka, imageBytes);
+                            }
+                            catch (Exception ex)
+                            {
+                                // Dosya okuma hatasını işle
+                                Console.WriteLine("Dosya okuma hatası: " + ex.Message);
+                            }
+                        }
+
+                        gridControl1.DataSource = dt;
+
+
                     }
                     else
                     {
@@ -130,6 +163,13 @@ namespace OtoKiralama
                 frm.Show();
             }
         }
+
+        private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+
+        }
+
+
     }
 }
 

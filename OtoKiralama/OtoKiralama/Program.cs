@@ -1,5 +1,7 @@
+using DevExpress.XtraBars;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography.X509Certificates;
+using System.Windows.Controls;
 //Ekleme ****
 //DbOto context = new();
 //Marka marka = new() { MarkaAdi = "Bmw" };
@@ -33,6 +35,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace OtoKiralama
 {
+    
     internal static class Program
     {
         /// <summary>

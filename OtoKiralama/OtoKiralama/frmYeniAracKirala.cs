@@ -28,12 +28,14 @@ namespace OtoKiralama
         public frmYeniAracKirala()
         {
             InitializeComponent();
+            simpleButton1.Click += simpleButton1_Click;
+            btnAracListele.Click += btnAracListele_Click;
         }
 
 
         private void frmYeniAracKirala_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void textEdit1_EditValueChanged(object sender, EventArgs e)
@@ -51,7 +53,7 @@ namespace OtoKiralama
             }
             else
             {
-                
+
                 MessageBox.Show("Girilen Tc'ye göre kayıtlı müşteri yok Lütfen  Müşteriyi ekleyin");
             }
 
@@ -79,10 +81,10 @@ namespace OtoKiralama
                     KiralamaTarihi = kiralamaTarihi,
                     BitişTarihi = bitisTarihi,
                     Ucreti = textEdit3.Text,
-                    MusteriTc=list.Tcno,
-                    MusteriAdSoyad=list.Ad+" "+list.Soyad,
-                    MusteriTel=list.Telefonu
-                    
+                    MusteriTc = list.Tcno,
+                    MusteriAdSoyad = list.Ad + " " + list.Soyad,
+                    MusteriTel = list.Telefonu
+
                 };
                 Mycontext.AracListesi.Add(aracListesi);
                 Mycontext.SaveChanges();
@@ -102,6 +104,17 @@ namespace OtoKiralama
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.Refresh();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+           var ResimYolu= Image.FromFile(Mycontext.carList.Where(x => x.Plakano == textBox2.Text).Select(x => x.resim).FirstOrDefault());
+            if (ResimYolu != null)
+            {
+                pictureBox1.Image= ResimYolu;
+            }
+
         }
     }
 }

@@ -19,14 +19,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="DevExpress\" />
     <Folder Include="Migrations\" />
     <Folder Include="Resimler\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="frmArabaEkle.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="frmYeniAracKirala.cs">
       <SubType>Form</SubType>
     </Compile>
