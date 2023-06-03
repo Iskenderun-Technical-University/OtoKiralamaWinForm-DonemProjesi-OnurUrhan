@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\user\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\user\\.nuget\\packages",
+      "C:\\Users\\Onur\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Onur\\.nuget\\packages",
       "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
     ],
     "configProperties": {

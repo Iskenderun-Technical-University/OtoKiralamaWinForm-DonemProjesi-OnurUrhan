@@ -42,7 +42,7 @@ namespace OtelForm
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            if (txtUserName.Text == "" && txtPassword.Text == "")
+            if (txtUserName.Text == "ADMIN" && txtPassword.Text == "123")
             {
                 this.Hide();
                 var mainPage = new frmAnasayfa();
