@@ -28,6 +28,7 @@ namespace OtoKiralama
 
         public frmAracListele()
         {
+
             DbOto Mycontext = new();
             InitializeComponent();
             var marka = Mycontext.Marka.ToList();
@@ -75,7 +76,7 @@ namespace OtoKiralama
 
         private void btnAracListele_Click_1(object sender, EventArgs e)
         {
-            gridView1.OptionsView.ColumnAutoWidth = true;
+
 
             DbOto Mycontext = new();
             var list = from cl in Mycontext.carList

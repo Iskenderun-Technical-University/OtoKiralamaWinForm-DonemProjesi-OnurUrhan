@@ -410,6 +410,7 @@
             // 
             // gridView1
             // 
+            gridView1.ActiveFilterEnabled = false;
             gridView1.DetailHeight = 284;
             gridView1.GridControl = gridControl1;
             gridView1.Name = "gridView1";

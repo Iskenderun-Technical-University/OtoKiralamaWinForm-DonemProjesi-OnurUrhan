@@ -219,20 +219,18 @@
             // 
             // comboBox2
             // 
-            comboBox2.DrawMode = DrawMode.OwnerDrawFixed;
             comboBox2.FormattingEnabled = true;
             comboBox2.Location = new Point(335, 37);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(126, 22);
+            comboBox2.Size = new Size(126, 21);
             comboBox2.TabIndex = 7;
             // 
             // comboBox1
             // 
-            comboBox1.DrawMode = DrawMode.OwnerDrawFixed;
             comboBox1.FormattingEnabled = true;
             comboBox1.Location = new Point(335, 12);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(126, 22);
+            comboBox1.Size = new Size(126, 21);
             comboBox1.TabIndex = 6;
             // 
             // textBox3

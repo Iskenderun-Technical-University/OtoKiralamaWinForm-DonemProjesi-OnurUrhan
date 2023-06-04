@@ -51,7 +51,7 @@ namespace OtoKiralama
             DbOto Mycontext = new DbOto();
 
             var list = from k in Mycontext.KiralamaListesi
-                       join a in Mycontext.Marka on k.Id equals a.Id
+                       join a in Mycontext.Marka on k.Marka equals a.Id
                        select new
                        {
                            Id = k.Id,
@@ -59,11 +59,13 @@ namespace OtoKiralama
                            Model = k.Model,
                            ModelYili = k.ModelYılı,
                            Marka = a.MarkaAdi,
+                           Ücreti = k.Ucreti,
                            KiralamaTarihi = k.KiralamaTarihi,
                            BitişTarihi = k.BitişTarihi,
                            MüşteriTcNo = k.MusteriTc,
                            MüşteriAd = k.MusteriAdSoyad,
-                           MüşterininTelefonu = k.MusteriTel
+                           MüşterininTelefonu = k.MusteriTel,
+                           
                        };
             if (list != null)
             {
@@ -77,7 +79,7 @@ namespace OtoKiralama
             DbOto Mycontext = new DbOto();
 
             var list = from k in Mycontext.KiralamaListesi
-                       join a in Mycontext.Marka on k.Id equals a.Id
+                       join a in Mycontext.Marka on k.Marka equals a.Id
                        select new
                        {
                            Id = k.Id,
@@ -85,6 +87,7 @@ namespace OtoKiralama
                            Model = k.Model,
                            ModelYili = k.ModelYılı,
                            Marka = a.MarkaAdi,
+                           Ücreti = k.Ucreti,
                            KiralamaTarihi = k.KiralamaTarihi,
                            BitişTarihi = k.BitişTarihi,
                            MüşteriTcNo = k.MusteriTc,
@@ -97,10 +100,7 @@ namespace OtoKiralama
             {
                 list = list.Where(x => x.KiralamaTarihi <= Convert.ToDateTime(dtStart.EditValue) && x.BitişTarihi >= Convert.ToDateTime(dtEnd.EditValue));
             }
-            else
-            {
-                list = list.Where(x => x.KiralamaTarihi < DateTime.Now && x.BitişTarihi > DateTime.Now);
-            }
+            
             if (comboBox1.SelectedIndex > 0)
             {
                 list = list.Where(x => x.Marka == comboBox1.SelectedItem.ToString());

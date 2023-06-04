@@ -93,6 +93,7 @@ namespace OtoKiralama
                         dt.Columns.Add("Modeli", typeof(string));
                         dt.Columns.Add("ModelYili", typeof(string));
                         dt.Columns.Add("Plaka", typeof(string));
+                        dt.Columns.Add("Ücreti", typeof(decimal));
                         dt.Columns.Add("Resim", typeof(byte[]));
 
                         foreach (var item in filtreliAraclar)
@@ -100,7 +101,7 @@ namespace OtoKiralama
                             try
                             {
                                 byte[] imageBytes = File.ReadAllBytes(item.Resim);
-                                dt.Rows.Add(item.Numara, item.Marka, item.Model, item.ModelYılı, item.Plaka, imageBytes);
+                                dt.Rows.Add(item.Numara, item.Marka, item.Model, item.ModelYılı, item.Plaka, item.Ücreti,imageBytes);
                             }
                             catch (Exception ex)
                             {
@@ -150,7 +151,7 @@ namespace OtoKiralama
             {
                 int[] selectedRowHandles = gridView1.GetSelectedRows();
                 string plakaNo = gridView1.GetRowCellValue(selectedRowHandles[0], "Plaka").ToString();
-                string marka = gridView1.GetRowCellValue(selectedRowHandles[0], "Marka").ToString();
+                string marka = gridView1.GetRowCellValue(selectedRowHandles[0], "Markası").ToString();
                 decimal ucret = Convert.ToDecimal(gridView1.GetRowCellValue(selectedRowHandles[0], "Ücreti"));
 
                 frmYeniAracKirala frm = new frmYeniAracKirala();

@@ -47,24 +47,23 @@
             layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
             dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             dateEdit2 = new DevExpress.XtraEditors.DateEdit();
+            simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             label1 = new Label();
             layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
             gridControl1 = new DevExpress.XtraGrid.GridControl();
             gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             Root = new DevExpress.XtraLayout.LayoutControlGroup();
             layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             popupMenu2 = new DevExpress.XtraBars.PopupMenu(components);
             ((System.ComponentModel.ISupportInitialize)barManager1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)popupMenu1).BeginInit();
@@ -79,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)layoutControlGroup2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)layoutControlItem2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControl2).BeginInit();
             layoutControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gridControl1).BeginInit();
@@ -91,8 +91,6 @@
             ((System.ComponentModel.ISupportInitialize)layoutControlItem5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)emptySpaceItem2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)emptySpaceItem1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)popupMenu2).BeginInit();
             SuspendLayout();
             // 
@@ -142,15 +140,15 @@
             barDockControlTop.Dock = DockStyle.Top;
             barDockControlTop.Location = new Point(0, 0);
             barDockControlTop.Manager = barManager1;
-            barDockControlTop.Size = new Size(1154, 24);
+            barDockControlTop.Size = new Size(1179, 24);
             // 
             // barDockControlBottom
             // 
             barDockControlBottom.CausesValidation = false;
             barDockControlBottom.Dock = DockStyle.Bottom;
-            barDockControlBottom.Location = new Point(0, 599);
+            barDockControlBottom.Location = new Point(0, 719);
             barDockControlBottom.Manager = barManager1;
-            barDockControlBottom.Size = new Size(1154, 0);
+            barDockControlBottom.Size = new Size(1179, 0);
             // 
             // barDockControlLeft
             // 
@@ -158,15 +156,15 @@
             barDockControlLeft.Dock = DockStyle.Left;
             barDockControlLeft.Location = new Point(0, 24);
             barDockControlLeft.Manager = barManager1;
-            barDockControlLeft.Size = new Size(0, 575);
+            barDockControlLeft.Size = new Size(0, 695);
             // 
             // barDockControlRight
             // 
             barDockControlRight.CausesValidation = false;
             barDockControlRight.Dock = DockStyle.Right;
-            barDockControlRight.Location = new Point(1154, 24);
+            barDockControlRight.Location = new Point(1179, 24);
             barDockControlRight.Manager = barManager1;
-            barDockControlRight.Size = new Size(0, 575);
+            barDockControlRight.Size = new Size(0, 695);
             // 
             // barButtonItem3
             // 
@@ -208,12 +206,11 @@
             layoutControl1.Controls.Add(layoutControl3);
             layoutControl1.Controls.Add(label1);
             layoutControl1.Controls.Add(layoutControl2);
-            layoutControl1.Controls.Add(simpleButton1);
             layoutControl1.Dock = DockStyle.Fill;
             layoutControl1.Location = new Point(0, 24);
             layoutControl1.Name = "layoutControl1";
             layoutControl1.Root = Root;
-            layoutControl1.Size = new Size(1154, 575);
+            layoutControl1.Size = new Size(1179, 695);
             layoutControl1.TabIndex = 9;
             layoutControl1.Text = "layoutControl1";
             // 
@@ -221,10 +218,11 @@
             // 
             layoutControl3.Controls.Add(dateEdit1);
             layoutControl3.Controls.Add(dateEdit2);
-            layoutControl3.Location = new Point(12, 55);
+            layoutControl3.Controls.Add(simpleButton1);
+            layoutControl3.Location = new Point(12, 50);
             layoutControl3.Name = "layoutControl3";
             layoutControl3.Root = layoutControlGroup2;
-            layoutControl3.Size = new Size(368, 100);
+            layoutControl3.Size = new Size(246, 94);
             layoutControl3.TabIndex = 0;
             layoutControl3.Text = "layoutControl3";
             // 
@@ -236,7 +234,7 @@
             dateEdit1.Name = "dateEdit1";
             dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
             dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            dateEdit1.Size = new Size(216, 20);
+            dateEdit1.Size = new Size(94, 20);
             dateEdit1.StyleController = layoutControl3;
             dateEdit1.TabIndex = 4;
             // 
@@ -248,17 +246,26 @@
             dateEdit2.Name = "dateEdit2";
             dateEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
             dateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            dateEdit2.Size = new Size(216, 20);
+            dateEdit2.Size = new Size(94, 20);
             dateEdit2.StyleController = layoutControl3;
             dateEdit2.TabIndex = 5;
+            // 
+            // simpleButton1
+            // 
+            simpleButton1.Location = new Point(12, 60);
+            simpleButton1.Name = "simpleButton1";
+            simpleButton1.Size = new Size(222, 22);
+            simpleButton1.StyleController = layoutControl3;
+            simpleButton1.TabIndex = 2;
+            simpleButton1.Text = "Listele";
             // 
             // layoutControlGroup2
             // 
             layoutControlGroup2.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             layoutControlGroup2.GroupBordersVisible = false;
-            layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] { layoutControlItem6, layoutControlItem7 });
+            layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] { layoutControlItem6, layoutControlItem7, layoutControlItem2 });
             layoutControlGroup2.Name = "layoutControlGroup2";
-            layoutControlGroup2.Size = new Size(368, 100);
+            layoutControlGroup2.Size = new Size(246, 94);
             layoutControlGroup2.TextVisible = false;
             // 
             // layoutControlItem6
@@ -266,7 +273,7 @@
             layoutControlItem6.Control = dateEdit1;
             layoutControlItem6.Location = new Point(0, 0);
             layoutControlItem6.Name = "layoutControlItem6";
-            layoutControlItem6.Size = new Size(348, 24);
+            layoutControlItem6.Size = new Size(226, 24);
             layoutControlItem6.Text = "Kiralama Başlangıç Tarihi";
             layoutControlItem6.TextSize = new Size(116, 13);
             // 
@@ -275,26 +282,35 @@
             layoutControlItem7.Control = dateEdit2;
             layoutControlItem7.Location = new Point(0, 24);
             layoutControlItem7.Name = "layoutControlItem7";
-            layoutControlItem7.Size = new Size(348, 56);
+            layoutControlItem7.Size = new Size(226, 24);
             layoutControlItem7.Text = "Kiralama Bitiş Tarihi";
             layoutControlItem7.TextSize = new Size(116, 13);
+            // 
+            // layoutControlItem2
+            // 
+            layoutControlItem2.Control = simpleButton1;
+            layoutControlItem2.Location = new Point(0, 48);
+            layoutControlItem2.Name = "layoutControlItem2";
+            layoutControlItem2.Size = new Size(226, 26);
+            layoutControlItem2.TextSize = new Size(0, 0);
+            layoutControlItem2.TextVisible = false;
             // 
             // label1
             // 
             label1.Font = new Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(12, 12);
             label1.Name = "label1";
-            label1.Size = new Size(368, 39);
+            label1.Size = new Size(246, 34);
             label1.TabIndex = 1;
             label1.Text = "Lütfen Kiralanma Tarihleri Seçiniz";
             // 
             // layoutControl2
             // 
             layoutControl2.Controls.Add(gridControl1);
-            layoutControl2.Location = new Point(12, 205);
+            layoutControl2.Location = new Point(12, 148);
             layoutControl2.Name = "layoutControl2";
             layoutControl2.Root = layoutControlGroup1;
-            layoutControl2.Size = new Size(1130, 358);
+            layoutControl2.Size = new Size(1155, 535);
             layoutControl2.TabIndex = 3;
             layoutControl2.Text = "layoutControl2";
             // 
@@ -304,17 +320,19 @@
             gridControl1.MainView = gridView1;
             gridControl1.MenuManager = barManager1;
             gridControl1.Name = "gridControl1";
-            gridControl1.Size = new Size(1106, 334);
+            gridControl1.Size = new Size(1131, 511);
             gridControl1.TabIndex = 4;
             gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView1 });
             // 
             // gridView1
             // 
+            gridView1.DetailHeight = 550;
             gridView1.GridControl = gridControl1;
             gridView1.Name = "gridView1";
+            gridView1.OptionsPrint.MaxMergedCellHeight = 750;
             gridView1.OptionsView.RowAutoHeight = true;
             gridView1.OptionsView.ShowAutoFilterRow = true;
-            gridView1.RowHeight = 40;
+            gridView1.RowHeight = 120;
             gridView1.RowClick += gridView1_RowClick;
             // 
             // layoutControlGroup1
@@ -323,7 +341,7 @@
             layoutControlGroup1.GroupBordersVisible = false;
             layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] { layoutControlItem4 });
             layoutControlGroup1.Name = "layoutControlGroup1";
-            layoutControlGroup1.Size = new Size(1130, 358);
+            layoutControlGroup1.Size = new Size(1155, 535);
             layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem4
@@ -331,43 +349,34 @@
             layoutControlItem4.Control = gridControl1;
             layoutControlItem4.Location = new Point(0, 0);
             layoutControlItem4.Name = "layoutControlItem4";
-            layoutControlItem4.Size = new Size(1110, 338);
+            layoutControlItem4.Size = new Size(1135, 515);
             layoutControlItem4.TextSize = new Size(0, 0);
             layoutControlItem4.TextVisible = false;
-            // 
-            // simpleButton1
-            // 
-            simpleButton1.Location = new Point(12, 159);
-            simpleButton1.Name = "simpleButton1";
-            simpleButton1.Size = new Size(368, 22);
-            simpleButton1.StyleController = layoutControl1;
-            simpleButton1.TabIndex = 2;
-            simpleButton1.Text = "Listele";
             // 
             // Root
             // 
             Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             Root.GroupBordersVisible = false;
-            Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] { layoutControlItem3, emptySpaceItem3, layoutControlItem5, emptySpaceItem2, layoutControlItem1, layoutControlItem2, emptySpaceItem1 });
+            Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] { layoutControlItem3, emptySpaceItem3, layoutControlItem5, emptySpaceItem2, layoutControlItem1 });
             Root.Name = "Root";
-            Root.Size = new Size(1154, 575);
+            Root.Size = new Size(1179, 695);
             Root.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             layoutControlItem3.Control = layoutControl2;
-            layoutControlItem3.Location = new Point(0, 193);
+            layoutControlItem3.Location = new Point(0, 136);
             layoutControlItem3.Name = "layoutControlItem3";
-            layoutControlItem3.Size = new Size(1134, 362);
+            layoutControlItem3.Size = new Size(1159, 539);
             layoutControlItem3.TextSize = new Size(0, 0);
             layoutControlItem3.TextVisible = false;
             // 
             // emptySpaceItem3
             // 
             emptySpaceItem3.AllowHotTrack = false;
-            emptySpaceItem3.Location = new Point(372, 0);
+            emptySpaceItem3.Location = new Point(250, 0);
             emptySpaceItem3.Name = "emptySpaceItem3";
-            emptySpaceItem3.Size = new Size(762, 43);
+            emptySpaceItem3.Size = new Size(909, 38);
             emptySpaceItem3.TextSize = new Size(0, 0);
             // 
             // layoutControlItem5
@@ -375,43 +384,26 @@
             layoutControlItem5.Control = label1;
             layoutControlItem5.Location = new Point(0, 0);
             layoutControlItem5.Name = "layoutControlItem5";
-            layoutControlItem5.Size = new Size(372, 43);
+            layoutControlItem5.Size = new Size(250, 38);
             layoutControlItem5.TextSize = new Size(0, 0);
             layoutControlItem5.TextVisible = false;
             // 
             // emptySpaceItem2
             // 
             emptySpaceItem2.AllowHotTrack = false;
-            emptySpaceItem2.Location = new Point(372, 43);
+            emptySpaceItem2.Location = new Point(250, 38);
             emptySpaceItem2.Name = "emptySpaceItem2";
-            emptySpaceItem2.Size = new Size(762, 130);
+            emptySpaceItem2.Size = new Size(909, 98);
             emptySpaceItem2.TextSize = new Size(0, 0);
             // 
             // layoutControlItem1
             // 
             layoutControlItem1.Control = layoutControl3;
-            layoutControlItem1.Location = new Point(0, 43);
+            layoutControlItem1.Location = new Point(0, 38);
             layoutControlItem1.Name = "layoutControlItem1";
-            layoutControlItem1.Size = new Size(372, 104);
+            layoutControlItem1.Size = new Size(250, 98);
             layoutControlItem1.TextSize = new Size(0, 0);
             layoutControlItem1.TextVisible = false;
-            // 
-            // layoutControlItem2
-            // 
-            layoutControlItem2.Control = simpleButton1;
-            layoutControlItem2.Location = new Point(0, 147);
-            layoutControlItem2.Name = "layoutControlItem2";
-            layoutControlItem2.Size = new Size(372, 26);
-            layoutControlItem2.TextSize = new Size(0, 0);
-            layoutControlItem2.TextVisible = false;
-            // 
-            // emptySpaceItem1
-            // 
-            emptySpaceItem1.AllowHotTrack = false;
-            emptySpaceItem1.Location = new Point(0, 173);
-            emptySpaceItem1.Name = "emptySpaceItem1";
-            emptySpaceItem1.Size = new Size(1134, 20);
-            emptySpaceItem1.TextSize = new Size(0, 0);
             // 
             // popupMenu2
             // 
@@ -423,7 +415,7 @@
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1154, 599);
+            ClientSize = new Size(1179, 719);
             Controls.Add(layoutControl1);
             Controls.Add(barDockControlLeft);
             Controls.Add(barDockControlRight);
@@ -445,6 +437,7 @@
             ((System.ComponentModel.ISupportInitialize)layoutControlGroup2).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem6).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)layoutControlItem2).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControl2).EndInit();
             layoutControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)gridControl1).EndInit();
@@ -457,8 +450,6 @@
             ((System.ComponentModel.ISupportInitialize)layoutControlItem5).EndInit();
             ((System.ComponentModel.ISupportInitialize)emptySpaceItem2).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)layoutControlItem2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)emptySpaceItem1).EndInit();
             ((System.ComponentModel.ISupportInitialize)popupMenu2).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -496,11 +487,10 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraEditors.DateEdit dateEdit1;
         private DevExpress.XtraEditors.DateEdit dateEdit2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
     }
 }

@@ -365,13 +365,17 @@ namespace OtoKiralama
             // 
             // gridView1
             // 
+            gridView1.ActiveFilterEnabled = false;
             gridView1.DetailHeight = 550;
             gridView1.GridControl = gridControl1;
+            gridView1.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Never;
             gridView1.Name = "gridView1";
             gridView1.OptionsPrint.MaxMergedCellHeight = 750;
             gridView1.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
-            gridView1.OptionsView.ShowAutoFilterRow = true;
-            gridView1.RowHeight = 70;
+            gridView1.RowHeight = 120;
+            gridView1.ScrollStyle = DevExpress.XtraGrid.Views.Grid.ScrollStyleFlags.None;
+            gridView1.SynchronizeClones = false;
+            gridView1.VertScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Never;
             // 
             // repositoryItemImageEdit1
             // 
