@@ -23,7 +23,7 @@ namespace OtelForm
         public static extern bool ReleaseCapture();
         public formLogin()
         {
-          
+
             InitializeComponent();
             this.MouseDown += formLogin_MouseDown;
         }
@@ -44,26 +44,26 @@ namespace OtelForm
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            
+
 
             if (txtUserName.Text != "" && txtPassword.Text != "")
             {
                 var User = Mycontext.User.Where(x => x.UserName == txtUserName.Text).FirstOrDefault();
-                if (User != null && User.Password==txtPassword.Text)
+                if (User != null && User.Password == txtPassword.Text)
                 {
 
                     this.Hide();
                     var mainPage = new frmAnasayfa();
                     mainPage.Show();
                 }
-               
+
             }
             else
             {
                 XtraMessageBox.Show("Kullanıcı adı veya şifre hatalı !!!");
                 return;
             }
-            
+
 
         }
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Onur\\source\\repos\\OtoKiralama\\OtoKiralama\\OtoKiralama.csproj": {}
+    "C:\\Users\\Onur\\Documents\\GitHub\\OtoKiralamaWinForm-DonemProjesi-OnurUrhan\\OtoKiralama\\OtoKiralama\\OtoKiralama.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Onur\\source\\repos\\OtoKiralama\\OtoKiralama\\OtoKiralama.csproj": {
+    "C:\\Users\\Onur\\Documents\\GitHub\\OtoKiralamaWinForm-DonemProjesi-OnurUrhan\\OtoKiralama\\OtoKiralama\\OtoKiralama.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Onur\\source\\repos\\OtoKiralama\\OtoKiralama\\OtoKiralama.csproj",
+        "projectUniqueName": "C:\\Users\\Onur\\Documents\\GitHub\\OtoKiralamaWinForm-DonemProjesi-OnurUrhan\\OtoKiralama\\OtoKiralama\\OtoKiralama.csproj",
         "projectName": "OtoKiralama",
-        "projectPath": "C:\\Users\\Onur\\source\\repos\\OtoKiralama\\OtoKiralama\\OtoKiralama.csproj",
+        "projectPath": "C:\\Users\\Onur\\Documents\\GitHub\\OtoKiralamaWinForm-DonemProjesi-OnurUrhan\\OtoKiralama\\OtoKiralama\\OtoKiralama.csproj",
         "packagesPath": "C:\\Users\\Onur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Onur\\source\\repos\\OtoKiralama\\OtoKiralama\\obj\\",
+        "outputPath": "C:\\Users\\Onur\\Documents\\GitHub\\OtoKiralamaWinForm-DonemProjesi-OnurUrhan\\OtoKiralama\\OtoKiralama\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
