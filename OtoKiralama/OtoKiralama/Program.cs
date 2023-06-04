@@ -1,5 +1,7 @@
 using DevExpress.XtraBars;
 using Microsoft.EntityFrameworkCore;
+using OtelForm;
+using System.ComponentModel.DataAnnotations;
 using System.Security.Cryptography.X509Certificates;
 using System.Windows.Controls;
 //Ekleme ****
@@ -47,7 +49,7 @@ namespace OtoKiralama
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new frmAnasayfa());
+            Application.Run(new formLogin());
         }
     }
 }
@@ -66,6 +68,7 @@ public class DbOto : DbContext
     public DbSet<CarList> kiralamaArac { get; set; }
 
     public DbSet<CarList> carList { get; set; }
+    public DbSet<User> User { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -73,6 +76,13 @@ public class DbOto : DbContext
 
     }
 
+}
+public class User
+{
+    [Key]
+    public int  Id { get; set; }
+    public string UserName { get; set; }
+    public string Password { get; set; }
 }
 public class AracListesi
 {

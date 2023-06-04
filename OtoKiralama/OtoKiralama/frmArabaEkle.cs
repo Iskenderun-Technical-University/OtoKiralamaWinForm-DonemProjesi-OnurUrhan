@@ -57,7 +57,7 @@ namespace OtoKiralama
         private void btnAracListele_Click(object sender, EventArgs e)
         {
 
-
+            Mycontext.AracListesi.ToList();
         }
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

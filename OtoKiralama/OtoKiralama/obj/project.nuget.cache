@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nlhbaFqn+KxYdYv38UCqHEysmYYfau60iZ/bhlNCN55v6mUszm5a0uD1/asjusycfza4KV8MN2sAPHY9vYs1GA==",
+  "dgSpecHash": "S22Bkj+TH3aQqKyG5E/UCyy1YPSiapiAtKzHr2YOaALK2h1scZgQ7HM3ekllqcutwtCdAwYe2SLAiCRwYKRUgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Onur\\Desktop\\Yeni klasör\\OtoKiralama\\OtoKiralama.csproj",
+  "projectFilePath": "C:\\Users\\Onur\\source\\repos\\OtoKiralama\\OtoKiralama\\OtoKiralama.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Onur\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Onur\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -14,6 +14,7 @@ namespace OtelForm
 {
     public partial class formLogin : DevExpress.XtraEditors.XtraForm
     {
+        DbOto Mycontext = new DbOto();
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
         [System.Runtime.InteropServices.DllImport("user32.dll")]
@@ -22,6 +23,7 @@ namespace OtelForm
         public static extern bool ReleaseCapture();
         public formLogin()
         {
+          
             InitializeComponent();
             this.MouseDown += formLogin_MouseDown;
         }
@@ -42,11 +44,19 @@ namespace OtelForm
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            if (txtUserName.Text == "ADMIN" && txtPassword.Text == "123")
+            
+
+            if (txtUserName.Text != "" && txtPassword.Text != "")
             {
-                this.Hide();
-                var mainPage = new frmAnasayfa();
-                mainPage.Show();
+                var User = Mycontext.User.Where(x => x.UserName == txtUserName.Text).FirstOrDefault();
+                if (User != null && User.Password==txtPassword.Text)
+                {
+
+                    this.Hide();
+                    var mainPage = new frmAnasayfa();
+                    mainPage.Show();
+                }
+               
             }
             else
             {
